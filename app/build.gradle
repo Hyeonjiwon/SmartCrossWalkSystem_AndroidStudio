@@ -30,5 +30,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
 
+    implementation 'com.android.support:recyclerview-v7:29.0.0'
     implementation 'com.android.support:support-core-utils:29.0.0'
 }

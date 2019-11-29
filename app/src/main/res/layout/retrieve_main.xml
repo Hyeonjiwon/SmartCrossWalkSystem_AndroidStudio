@@ -4,18 +4,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".RetrieveActivity"
     android:layout_margin="15dp"
     android:padding="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text=" ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:layout_weight="3"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="DATE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="CHANGES"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
-        android:layout_margin="5dp"
-        android:padding="5dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
         android:id="@+id/listView_main_list" />
 
+<!--
     <Button
         android:id="@+id/button_main_all"
         android:layout_width="match_parent"
@@ -26,11 +74,11 @@
         android:text="전체보기"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
-
+-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="1"
         android:layout_margin="5dp"
         android:padding="5dp"
         android:id="@+id/textView_main_result" />

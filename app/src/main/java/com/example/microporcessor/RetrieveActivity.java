@@ -1,12 +1,11 @@
 package com.example.microporcessor;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -56,8 +55,19 @@ public class RetrieveActivity extends AppCompatActivity {
         mAdapter = new CrossWalkAdapter(this, mArrayList);
         mRecyclerView.setAdapter(mAdapter);
 
+        Intent intent = getIntent(); //데이터 수신
 
-        Button button_all = (Button) findViewById(R.id.button_main_all);
+        int flag = intent.getExtras().getInt("flag");
+
+        if(flag == 1) {
+            mArrayList.clear();
+            mAdapter.notifyDataSetChanged();
+
+            GetData task = new GetData();
+            task.execute( "http://" + IP_ADDRESS + "/getjson.php", "");
+        }
+
+        /*
         button_all.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -68,6 +78,7 @@ public class RetrieveActivity extends AppCompatActivity {
                 task.execute( "http://" + IP_ADDRESS + "/getjson.php", "");
             }
         });
+        */
 
     }
 

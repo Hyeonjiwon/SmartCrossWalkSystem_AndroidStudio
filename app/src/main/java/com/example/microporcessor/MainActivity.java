@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RetrieveActivity.class);
+                intent.putExtra("flag", 1);
                 startActivityForResult(intent, ret);
             }
         });
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PictureActivity.class);
-
                 startActivityForResult(intent, pic);
             }
         });
