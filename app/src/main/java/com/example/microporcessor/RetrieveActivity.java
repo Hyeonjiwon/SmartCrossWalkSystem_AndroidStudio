@@ -26,7 +26,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class RetrieveActivity extends AppCompatActivity {
-    private static String IP_ADDRESS = "192.168.0.92";
+    private static String IP_ADDRESS = "52.79.56.62/php/";
     private static String TAG = "phptest";
 
     private EditText mEditTextName;
