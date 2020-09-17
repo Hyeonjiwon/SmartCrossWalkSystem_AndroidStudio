@@ -17,7 +17,7 @@
             android:layout_column="0"
             android:background="@color/cardview_light_background"
             android:gravity="center"
-            android:text=" Text"
+            android:text="Text"
             android:textColor="@color/main_color"
             android:textSize="20sp" />
 

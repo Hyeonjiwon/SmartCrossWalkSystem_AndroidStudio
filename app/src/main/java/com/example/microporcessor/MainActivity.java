@@ -27,17 +27,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, ret);
             }
         });
-
-        Button pictureBtn = (Button)findViewById(R.id.pictureBtn); //페이지 전환 버튼
-
-        pictureBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PictureActivity.class);
-                startActivityForResult(intent, pic);
-            }
-        });
     }
-
-
 }

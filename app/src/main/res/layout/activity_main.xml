@@ -52,6 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <!--
     <Button
         android:id="@+id/pictureBtn"
         android:layout_width="300dp"
@@ -69,6 +70,6 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/retrieveBtn"
         app:layout_constraintVertical_bias="0.8" />
-
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

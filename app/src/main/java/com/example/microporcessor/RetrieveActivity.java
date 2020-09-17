@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -44,11 +43,11 @@ public class RetrieveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.retrieve_main);
 
-        mTextViewResult = (TextView)findViewById(R.id.textView_main_result);
+        //mTextViewResult = (TextView)findViewById(R.id.textView_main_result);
         mRecyclerView = (RecyclerView) findViewById(R.id.listView_main_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mTextViewResult.setMovementMethod(new ScrollingMovementMethod());
+        //mTextViewResult.setMovementMethod(new ScrollingMovementMethod());
 
         mArrayList = new ArrayList<>();
 
@@ -99,12 +98,12 @@ public class RetrieveActivity extends AppCompatActivity {
             super.onPostExecute(result);
 
             progressDialog.dismiss();
-            mTextViewResult.setText(result);
+            //mTextViewResult.setText(result);
             Log.d(TAG, "response - " + result);
 
             if (result == null){
 
-                mTextViewResult.setText(errorString);
+                //mTextViewResult.setText(errorString);
             }
             else {
 
